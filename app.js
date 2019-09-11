@@ -1,15 +1,15 @@
-function Pracownik(imie) {
+function Osoba(imie) {
     this.imie = imie;
 }
 
-Pracownik.prototype.przedstawSie = function() {
+Osoba.prototype.przedstawSie = function() {
     console.log(`Nazywam sie ${this.imie}`);
 }
 
-var p = new Pracownik("Marcin");
+var p = new Osoba("Marcin");
 
-var temp = Object.create(Pracownik.prototype);
-Pracownik.call(temp, "Mateusz");
+var temp = Object.create(Osoba.prototype);
+Osoba.call(temp, "Mateusz");
 var pp = temp;
 
 pp.przedstawSie();
