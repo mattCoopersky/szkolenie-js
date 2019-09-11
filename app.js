@@ -1,17 +1,21 @@
-function Osoba(imie) {
-    this.imie = imie;
+function add(a, b) {
+    return a + b;
 }
 
-Osoba.prototype.przedstawSie = function() {
-    console.log(`Nazywam sie ${this.imie}`);
-}
+var n1 = 10, n2 = 20;
+console.log(n1, n2, add(n1, n2));
 
-var p = new Osoba("Marcin");
+var n = 1.5;
+var b = true;
+var s = "hello " + 'world';
 
-var temp = Object.create(Osoba.prototype);
-Osoba.call(temp, "Mateusz");
-var pp = temp;
+var nu = null;
+var u = undefined;
 
-pp.przedstawSie();
+//wypisanie wartosci zmiennej
+console.log(n);
+console.log(n, b, s);
 
-console.log("costam");
+//operator typeof zwraca nazwe typu
+console.log(typeof n, typeof b, typeof s, typeof u);
+console.log(typeof nu);
