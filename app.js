@@ -13,3 +13,5 @@ Pracownik.call(temp, "Mateusz");
 var pp = temp;
 
 pp.przedstawSie();
+
+console.log("costam");
